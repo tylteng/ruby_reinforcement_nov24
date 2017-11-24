@@ -21,4 +21,12 @@ ballots.each do |x|
   end
 end
 
-p tally
+tally = tally.sort_by(&:last)
+tally_placement = tally.reverse
+
+counter = 1
+
+tally_placement.each do |x|
+  puts "#{x.first} is in #{counter}th place!!"
+  counter += 1
+end
