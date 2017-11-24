@@ -27,6 +27,6 @@ tally_placement = tally.reverse
 counter = 1
 
 tally_placement.each do |x|
-  puts "#{x.first} is in #{counter}th place with #{x.last} votes!!"
+  puts "#{x.first} is in place #{counter} with #{x.last} votes!!"
   counter += 1
 end
